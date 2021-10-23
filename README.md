@@ -24,7 +24,7 @@ location in different flights.
 ## Experimental Harware Development for embedded IoT
 Components, microcontroller and electrical connections were soldered, assembled and developed for the compatibility of embedded IoT. For this project hardware development of embedded IoT Drone, following components have been used such as: Drone, LoRa Microcontroller board, Air Quality Sensor, Raspberry Pi Linux gateway.
 
-# Drone
+### Drone
 For edge computing as LoRa end node, the components of building an autonomous drone from scratch has been described here: https://github.com/Shakir74/IoT_Drone/blob/main/Drone%20Building
  and after hardware development final IoT Drone view is as following
 ![alt text](https://github.com/Shakir74/IoT_Drone/blob/main/drone%20view.jpg)
