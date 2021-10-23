@@ -1,5 +1,5 @@
 For wireless communication of data transmission, to build our own LoRa network, ChirpStack open-source LoRaWAN Network was considered. The proposed 
 On that contrast ChirpStack was as following :
-![alt text] (https://github.com/Shakir74/IoT_Drone/blob/main/chirpstack%20nework%20server.jpg)
+https://github.com/Shakir74/IoT_Drone/blob/main/chirpstack%20nework%20server.jpg
 configured 
 once in gateway and again in AWS EC2 as aplication server. But it was always found that "Gateway never seen" in web server. 
