@@ -22,4 +22,5 @@ location in different flights.
 5. Customize data storage for long term.
 
 ## Drone
-https://github.com/Shakir74/IoT_Drone/blob/main/drone%20view.jpg
+
+![alt text](https://github.com/Shakir74/IoT_Drone/blob/main/drone%20view.jpg)
