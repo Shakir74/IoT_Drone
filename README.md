@@ -36,6 +36,7 @@ My embedded IoT Drone project's overall archietecture can be described in this f
 ![alt text](https://github.com/Shakir74/IoT_Drone/blob/main/LoRaWAN%20IoT%20UAV%20architecture%20in%20AWS%20cloud%20computing.jpg)
 
 ## Prototype features
+The mentioned project objectives have been achieved and the prototype has following features.
 1. Ability to reach any height as controlled by user.
 2. Long Range using IOT Connectivity.
 3. Measures gas parameters for air quality monitoring.
