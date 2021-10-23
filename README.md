@@ -21,10 +21,13 @@ location in different flights.
 4. Sensory data will be stored in an appropriate application server.
 5. Customize data storage for long term.
 
-## Experimental Harware Development for embedded IoT
+## Harware Development for embedded IoT
 Components, microcontroller and electrical connections were soldered, assembled and developed for the compatibility of embedded IoT. For this project hardware development of embedded IoT Drone, following components have been used such as: **Drone, LoRa Microcontroller board, Air Quality Sensor, Raspberry Pi Linux gateway**.
 
 ### Drone
 For edge computing as LoRa end node, the components of building an autonomous drone from scratch has been described here: https://github.com/Shakir74/IoT_Drone/blob/main/Drone%20Building
  and after hardware development final IoT Drone view is as following
 ![alt text](https://github.com/Shakir74/IoT_Drone/blob/main/drone%20view.jpg)
+
+## Software Development for embedded IoT
+1. Arduino: Arduino sketch of prototype device for the Arduino software development process to implement my introduce'air quality monitoring' measurement technique in drone for measuring and transmitting data from any location and my main aim was to collect measurements from connected sensors and to transmit the measured ata by LoRaWAN at a defined interval with my ototype device.
