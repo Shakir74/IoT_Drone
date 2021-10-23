@@ -1,0 +1,19 @@
+# Drone Building
+Our aim was to build a drone that can be integrated with IoT as an IoT edge with LoRaWAN board in this project. So, preferences were for a freestyle-based frame which can be crashed
+with a limited chance of a total write-off. Following parts were considered to build an autonomous drone with full flight controller stack for embedded IoT hardware and software development. 
+
+## Hardware
+1. Frame: Holybro X500 True X shape large drone frame of 500mm wheelbase.
+2. Motor: short shaft brushless 2216 KV880 motors.
+3. Propeller: CW and CCW 1045 propeller.
+4. Battery: 8000mAh 4s 14.8v 15C LiPo battery.
+5. ESC: BLHeli S 20A ESC. Burst Current(10S): 30A, LiPo cells: 2-4S.
+6. PDB-1: Holybro X500 power management board.
+7. PDB-2: Matek power distribution board for additional power supply to LoRa board.
+8. Connectors: XT60 male and female connectors.
+9. Flight Controller: Pixhawk4 Flight Controller.
+10. RC: Radiolink AT9S Pro 10/12 Channels 2.4 GHz RC Transmitter.
+
+## Software:
+1. QGroundControl (QGC)
+2. PX4 Open source AutoPilot
