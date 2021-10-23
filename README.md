@@ -23,5 +23,5 @@ location in different flights.
 
 ## Drone
 For edge computing as LoRa end node, how to build an autonomous drone has been described here: https://github.com/Shakir74/IoT_Drone/edit/main/Drone
-Final IoT Drone view ater hardware development
+ and after hardware development final IoT Drone view is as following
 ![alt text](https://github.com/Shakir74/IoT_Drone/blob/main/drone%20view.jpg)
