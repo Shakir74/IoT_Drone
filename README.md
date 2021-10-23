@@ -39,3 +39,4 @@ For edge computing as LoRa end node, the components of building an autonomous dr
 4. **AWS Cloud Computing**: For data analysis, visualization, storage and serverless computing three AWS services were implemented in this project inclduing **AWS IoT Core, AWS LAmbda, AWS IoT Analytics**.
 
 My embedded IoT Drone project's overall archietecture can be described in this following figure.  
+![alt text](https://github.com/Shakir74/IoT_Drone/blob/main/LoRaWAN%20IoT%20UAV%20architecture%20in%20AWS%20cloud%20computing.jpg)
