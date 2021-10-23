@@ -1,5 +1,7 @@
-For wireless communication of data transmission, to build our own LoRa network, ChirpStack open-source LoRaWAN Network was considered. The proposed 
-On that contrast ChirpStack was as following :
+For wireless communication of data transmission, to build our own LoRa network, ChirpStack open-source LoRaWAN Network was considered. ChirpStack can be configured in either Gateway Bridge or Network Server or Application server.
+In that contrast, ChirpStack was configured once in our gateway and again in AWS EC2 for aplication server. But it was always found that "Gateway never seen" in web server. So after thorough research it was found that
+ChirpStack LoRaWAN network server doesn't support our gateway RisingHF OS for packet forwarder. So later shifted to Loriot etwork Server for real-time wireless communication of data transmission.
+
+The proposed ChirpStack LoRaWAN Network Server for embedded IoT Drone software development is as following:
 https://github.com/Shakir74/IoT_Drone/blob/main/chirpstack%20nework%20server.jpg
-configured 
-once in gateway and again in AWS EC2 as aplication server. But it was always found that "Gateway never seen" in web server. 
+
