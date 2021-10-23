@@ -34,3 +34,24 @@ For edge computing as LoRa end node, the components of building an autonomous dr
 
 My embedded IoT Drone project's overall archietecture can be described in this following figure.  
 ![alt text](https://github.com/Shakir74/IoT_Drone/blob/main/LoRaWAN%20IoT%20UAV%20architecture%20in%20AWS%20cloud%20computing.jpg)
+
+## Prototype features
+1. Ability to reach any height as controlled by user.
+2. Long Range using IOT Connectivity.
+3. Measures gas parameters for air quality monitoring.
+4. Get all data to online portal for analysis.
+5. Live Data Monitoring.
+6. Long Duration Monitoring.
+
+## Used Cases
+This prototype embedded IoT Drone can be used in these following cases.
+1. Weather Forecasting.
+2. Search and Rescue.
+3. Pollution Monitoring.
+4. Infrared Thermography.
+5. Warehouse.
+6. Agriculture.
+7. Military Operations.
+8. Wild Fire.
+9. Others.
+
