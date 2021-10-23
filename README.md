@@ -21,6 +21,9 @@ location in different flights.
 4. Sensory data will be stored in an appropriate application server.
 5. Customize data storage for long term.
 
+## Experimental Tools
+Drone, Pixhawk, QGC, LoRaWAN, LoRa Gateway, Raspberry Pi, Linux, Arduino, MQTT, Chirpstack, JSON, REST API, AWS EC2, AWS IoT Core, AWS Lambda, AWS Timestream, AWS IoT Analytics
+
 ## Drone
 For edge computing as LoRa end node, how to build an autonomous drone has been described here: https://github.com/Shakir74/IoT_Drone/edit/main/Drone
  and after hardware development final IoT Drone view is as following
