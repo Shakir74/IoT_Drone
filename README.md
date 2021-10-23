@@ -30,4 +30,6 @@ For edge computing as LoRa end node, the components of building an autonomous dr
 ![alt text](https://github.com/Shakir74/IoT_Drone/blob/main/drone%20view.jpg)
 
 ## Software Development for embedded IoT
-1. Arduino: Arduino sketch of prototype device for the Arduino software development process to implement my introduce'air quality monitoring' measurement technique in drone for measuring and transmitting data from any location and my main aim was to collect measurements from connected sensors and to transmit the measured ata by LoRaWAN at a defined interval with my ototype device.
+1. **Arduino:** Arduino sketch of prototype device for the Arduino software development process to implement my introduced 'air quality monitoring' measurement technique in drone to collect measurements through connected sensors and to transmit the measured data by LoRaWAN at a defined interval with my prototype device. 
+
+2. **Linux Gateway**: For wireless data transmitting, Gateway module embedded with Raspberry Pi 3 recieves Drone end node data and with Linux commands gateway module pushes packet forwarder to Network Server.
