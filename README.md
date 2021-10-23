@@ -21,10 +21,10 @@ location in different flights.
 4. Sensory data will be stored in an appropriate application server.
 5. Customize data storage for long term.
 
-## Experimental Tools
-Drone, Pixhawk, QGC, LoRaWAN, air quality sensor, LoRa Gateway, Raspberry Pi, Linux, Arduino, Microcontroler, MQTT, Chirpstack, LORIOT Network Server, JSON, REST API, AWS EC2, AWS IoT Core, AWS Lambda, AWS IoT Analytics
+## Experimental Harware Development for embedded IoT
+Hardware: Components, microcontroller and electrical connections were soldered and developed for the compatibility of embedded IoT Drone hardware development. For this project hardware development following components have been used such as: Drone, LoRa Microcontroller board, Air Quality Sensor, Raspberry Pi Linux gateway.
 
 ## Drone
-For edge computing as LoRa end node, how to build an autonomous drone has been described here: https://github.com/Shakir74/IoT_Drone/edit/main/Drone
+For edge computing as LoRa end node, the components of an autonomous drone from scratch has been described here: https://github.com/Shakir74/IoT_Drone/edit/main/Drone
  and after hardware development final IoT Drone view is as following
 ![alt text](https://github.com/Shakir74/IoT_Drone/blob/main/drone%20view.jpg)
