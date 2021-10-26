@@ -15,7 +15,7 @@ In present days one of the most signoficant challenges of UAV IoT newrodk is "En
 5. Customize data storage for long term.
 
 ## Harware Development for embedded IoT
-Components, microcontroller and electrical connections were soldered, assembled and developed for the compatibility of embedded IoT. For this project hardware development of embedded IoT Drone, following components have been used such as: **Drone, LoRa Microcontroller board, Air Quality Sensor, Raspberry Pi Linux gateway**.
+Components, microcontroller and electrical connections were soldered, assembled and developed for the compatibility of embedded IoT. For this project hardware development of embedded IoT Drone, following components have been used:
 
 ### 1. Drone
 I built an autonomous full stack IoT Drone from scratch for this project. Drone components and how to build an autonomous drone from grom ground level with full flight controller stack is illustrated in my another project https://github.com/Shakir74/Drone/blob/main/README.md
@@ -27,7 +27,7 @@ For edge computing as LoRa end node, the components of building an autonomous dr
 
 3. **Air Quality Sensor**: For real-time air quality monitoring IoT application, air quality sensor v1.3 was functioned which has been responsive to a wide scope of harmful environmental gases, as carbon monoxide, alcohol, acetone, thinner, formaldehyde and so on.
 
-4. ** Raspberry Pi gateway**: For gateway purpose, Raspberry Pi 3 Model B was configured. To recieve drone data there were other modules which were bridged with Raspberry Pi including **Gateway module RHF0M301–868, PRI 2 Bridge RHF4T002, GPS (RHF76-052AM)**.
+4. **Raspberry Pi gateway**: For gateway purpose, Raspberry Pi 3 Model B was configured. To recieve drone data there were other modules which were bridged with Raspberry Pi including **Gateway module RHF0M301–868, PRI 2 Bridge RHF4T002, GPS (RHF76-052AM)**.
 
 ## Software Development for embedded IoT
 1. **Arduino:** Arduino sketch of prototype device for the Arduino software development process to implement my introduced 'air quality monitoring' measurement technique in drone to collect measurements through connected sensors with drone and to transmit the measured data by LoRaWAN at a defined interval from my prototype IoT Drone. 
