@@ -1,0 +1,137 @@
+#include <LoRaWan.h>
+#include "Air_Quality_Sensor.h"
+#include "Arduino.h"
+AirQualitySensor sensor(A0);
+
+
+unsigned char data[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 0xA,};
+char buffer[256];
+char airbuffer[256];
+
+void setupsensor(void) {
+  Serial.println("Set up Sensor Mode...");
+  Serial.begin(9600);
+  while (!Serial);
+    Serial.begin(9600);
+    while (!Serial);
+
+    Serial.println("Waiting sensor to init...");
+    delay(20000);
+
+  Serial.println("Waiting sensor to init...");
+  delay(20000);
+
+  if (sensor.init()) {
+    Serial.println("Sensor ready.");
+  }
+  else {
+    Serial.println("Sensor ERROR!");
+  }
+    if (sensor.init()) {
+        Serial.println("Sensor ready.");
+    } else {
+        Serial.println("Sensor ERROR!");
+    }
+}
+
+
+void setup(void)
+{
+    setupsensor();
+    Serial.println("LoRa Connection Mode...");
+    SerialUSB.begin(115200);
+    while(!SerialUSB);
+    
+    lora.init();
+    
+    memset(buffer, 0, 256);
+    lora.getVersion(buffer, 256, 1);
+    SerialUSB.print(buffer); 
+    
+    memset(buffer, 0, 256);
+    lora.getId(buffer, 256, 1);
+    SerialUSB.print(buffer);
+    
+    lora.setKey("2B7E151628AED2A6ABF7158809CF4F3C", "2B7E151628AED2A6ABF7158809CF4F3C", "2B7E151628AED2A6ABF7158809CF4F3C");
+    
+    lora.setDeciveMode(LWOTAA);
+    lora.setDataRate(DR0, EU868);
+    
+    lora.setChannel(0, 868.1);
+    lora.setChannel(1, 868.3);
+    lora.setChannel(2, 868.5);
+    
+    lora.setReceiceWindowFirst(0, 868.1);
+    lora.setReceiceWindowSecond(869.5, DR3);
+    
+    lora.setDutyCycle(false);
+    lora.setJoinDutyCycle(false);
+    
+    lora.setPower(14);
+    
+    while(!lora.setOTAAJoin(JOIN));
+}
+
+void loop(void)
+{   
+    bool result = false;
+
+    int quality = sensor.slope();
+
+    Serial.print("Sensor value: ");
+    Serial.println(sensor.getValue());
+
+    if (quality == AirQualitySensor::FORCE_SIGNAL) {
+       strcpy( airbuffer , "High pollution! Force signal active.");
+        Serial.println("High pollution! Force signal active.");
+    
+    } else if (quality == AirQualitySensor::HIGH_POLLUTION) {
+      strcpy(airbuffer , "High pollution!");
+        Serial.println("High pollution!");
+    } else if (quality == AirQualitySensor::LOW_POLLUTION) {
+         strcpy(airbuffer , "Low pollution!");
+        Serial.println("Low pollution!");
+    } else if (quality == AirQualitySensor::FRESH_AIR) {
+         strcpy(airbuffer , "Fresh air.");
+        Serial.println("Fresh air.");
+    }
+
+  Serial.print("Sensor value: ");
+  Serial.println(sensor.getValue());
+  
+
+  delay(1000);
+    delay(1000);
+
+
+    result = lora.transferPacket(airbuffer, 10);
+    SerialUSB.print(result);
+    delay(600000);
+    
+    
+    
+    if(result)
+    {
+        short length;
+        short rssi;
+        
+        memset(buffer, 0, 256);
+        length = lora.receivePacket(buffer, 256, &rssi);
+        
+        if(length)
+        {
+            SerialUSB.print("Length is: ");
+            SerialUSB.println(length);
+            SerialUSB.print("RSSI is: ");
+            SerialUSB.println(rssi);
+            SerialUSB.print("Data is: ");
+            for(unsigned char i = 0; i < length; i ++)
+            {
+                SerialUSB.print("0x");
+                SerialUSB.print(buffer[i], HEX);
+                SerialUSB.print(" ");
+            }
+            SerialUSB.println();
+        }
+    }
+}
