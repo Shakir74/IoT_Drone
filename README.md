@@ -1,4 +1,4 @@
-# Project Title
+# Title
 Integration and Development of energy efficient service oriented IoT applications system using LoRaWAN and Unmanned Area Vehicles.
 
 ## IoT Drone
