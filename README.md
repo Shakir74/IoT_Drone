@@ -62,3 +62,4 @@ This prototype embedded IoT Drone can be used in these following cases.
 8. Wild Fire.
 9. Others.
 
+I have also worked on another Industrial IoT project where I developed 6axis industrial robot prototype towards Industry 4.0. The project details is here https://github.com/Shakir74/Inudustry-4.0-Robot
